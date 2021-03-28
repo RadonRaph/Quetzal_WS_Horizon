@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Leaves
+  - Quetzal
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - PostProcessing
   - Not in Reflection
   - Traversable
-  - 
-  - 
+  - Entities
+  - IslandCubes
   - 
   - 
   - 

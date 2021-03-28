@@ -56,7 +56,12 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BetterAudio\Source\Plus\Editor\BetterAudioPlusSourceResources.cs" />
     <Compile Include="Assets\SunFlaresHDRP\Editor\SunFlaresEditor.cs" />
+    <Compile Include="Assets\BetterAudio\Source\Editor\BetterAudioSourceResources.cs" />
+    <Compile Include="Assets\BetterAudio\Source\Plus\Editor\BetterAudioPlusSourceEditor.cs" />
+    <Compile Include="Assets\BetterAudio\Source\Editor\BetterAudioGUI.cs" />
+    <Compile Include="Assets\BetterAudio\Source\Editor\BetterAudioSourceEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

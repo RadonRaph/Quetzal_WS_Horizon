@@ -84,6 +84,16 @@ public class CascadePlane : MonoBehaviour
             }
         }
         m_Mesh.triangles = triangles;
+
+        Vector2[] uv = new Vector2[vertices.Length];
+        for (int i = 0, y = 0; y <= widthVertices; y++)
+        {
+            for (int x = 0; x <= lengthVertices; x++, i++)
+            {
+                uv[i] = new Vector2((float)x / widthVertices,(float) y / lengthVertices);
+            }
+        }
+        m_Mesh.uv = uv;
     }
 
     struct MeshModJob : IJobParallelFor
@@ -165,7 +175,7 @@ public class CascadePlane : MonoBehaviour
         m_Mesh.vertices = m_ModifiedVertices;
 
         m_Mesh.RecalculateNormals();
-        m_Mesh.RecalculateUVDistributionMetric(0);
+        //m_Mesh.RecalculateUVDistributionMetric(0);
         //m_Mesh.normals = m_ModifiedNormals;
     }
 
